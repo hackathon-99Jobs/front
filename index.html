@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="brand">
+            <img src="./img/logo.png" alt="Logo Select Brasil">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Contrate a Select Brasil</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="javascript:void(0)" onclick="chamaModal()">Inscreva-se</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="lado-esq">
+            <img class="equipe" src="./img/equipe.jpg" alt="Foto da equipe dev">
+        </div>
+        <div class="lado-dir">
+            <div class="logo-main"><img src="./img/logo.png" alt="Logo Select Brasil"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper pulvinar risus. Curabitur eget
+                risus pharetra, malesuada ligula id, sollicitudin augue. Ut sodales quis ante dictum vestibulum. Morbi
+                eget blandit mauris, sed facilisis lectus. Fusce blandit, magna ac dictum dictum, arcu justo feugiat
+                elit, sit amet ornare libero ex et ipsum. Suspendisse viverra convallis finibus. Integer rhoncus lorem
+                eu augue pulvinar, non pellentesque lectus imperdiet. Vestibulum porttitor porttitor vulputate. Donec
+                gravida lacinia turpis, sed fringilla lorem pharetra eget. Cras nec velit imperdiet, lobortis massa at,
+                suscipit dui. Nulla facilisi.</p>
+        </div>
+    </main>
+
+
+
+
+    <section>
+        <div class="container-modal esconde-modal" id="modal-cad-aluno">
+            <div class="conteudo-modal">
+                <h2>Crie sua conta gratuita</h2>
+                <form action="">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <label for="email-confirm">Confirme o E-mail</label>
+                    <input type="email-confirm" name="email-confirm" id="email-confirm">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                    <label for="senha-confirm">Senha</label>
+                    <input type="password" name="senha-confirm" id="senha-confirm"><br>
+                    <button class="btn" id="btn-proximo" type="button" onclick="alternarTelaConteudoModal()">Próximo</button>
+                </form>
+            </div>
+            <div class="conteudo-modal esconde">
+                <h2>Crie sua conta gratuita</h2>
+                <form action="">
+                    <label for="redacao">Nos conte sua história!</label>
+                    <textarea class="redacao" name="redacao" id="redacao" cols="30" rows="20"></textarea>
+                    <button class="btn" id="btn-enviar" type="button" onclick="capturaDados()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

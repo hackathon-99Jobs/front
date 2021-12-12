@@ -1,0 +1,24 @@
+/* RESET CSS */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    padding-top: 100px;
+}
+body, p, ul, li, a, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
