@@ -63,7 +63,7 @@ main{
 .esconde{
     display: none !important;
 }
-.container-modal{
+.container-modal, .containerModalLogin{
     background-color: rgba(0, 0, 0, .85);
     width: 100vw;
     height: 100vh;
@@ -74,7 +74,7 @@ main{
     align-items: center;
 }
 
-.conteudo-modal{
+.conteudo-modal, .conteudoModalLogin{
     background-color: #fff;
     height: 80%;
     width: 50%;
@@ -84,14 +84,14 @@ main{
     align-items: center;
 }
 
-.conteudo-modal h2{
+.conteudo-modal h2, .conteudoModalLogin h2{
     font-size: 2em;
     color: #f9d006;
     margin: 20px;
 }
 
 
-.conteudo-modal form input{
+.conteudo-modal form input, .conteudoModalLogin form input{
     width: 500px;
     padding: 5px;
     font-size: 1.2em;
@@ -111,7 +111,7 @@ main{
     margin-top: 10px;
     display: block;
 }
-.conteudo-modal form label{
+.conteudo-modal form label, .conteudoModalLogin form label{
     display: block;
     font-weight: 600;
 }
@@ -132,4 +132,131 @@ main{
     color: #000;
     transition: all 0.5s;
     border: 2px solid #000;
+}
+
+/* modal login */
+.radio label, .radio input{
+    display: inline;
+}
+
+.btn2{
+    width: 500px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.form-login{
+    max-width: 500px;
+}
+
+/* tela ADMIN */
+
+.linha{
+    display: flex;
+    gap: 30px;
+}
+
+.campo{
+    width: 200px;
+}
+
+/*Parte do Gui*/
+
+.containerCourses{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.lightletter{
+    text-align: center;
+    margin: 50px;
+    color: #f9d006;
+    font-size: 3em;
+
+}
+
+.containerCourses img {
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 0%;
+}
+
+.graybox {
+    height: 400px;
+    width: 300px;
+    text-align: center;
+
+
+}
+
+.imgformatfinance{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    display: block;
+    background-image: url("/img/imgFinanceCourse.jpg");
+    background-size: contain;
+    margin: 0 auto;
+    border: 2px solid #f9d006;
+}
+
+.imgformatenterprise{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    display: block;
+    background-image: url("/img/imgEnterpriseCourse.jpg");
+    background-size: contain;
+    margin: 0 auto;
+    border: 2px solid #f9d006;
+}
+
+.imgformatmanagement{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    display: block;
+    background-image: url("/img/imgemployer.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    border: 2px solid #f9d006;
+    margin-top: 10px;
+}
+
+
+.graybox:hover {
+    box-shadow: 2px 4px 4px  rgba(0, 0 ,0, .05);
+}
+
+.marginSec{
+    margin: 150px;
+}
+
+.buttons{
+    background-color: #f9d006; /* Green */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+.buttons:hover{
+    background-color: transparent;
+    color: #f9d006;
+    border: 2px solid #f9d006;
+    transition: all 0.7s;   
 }
