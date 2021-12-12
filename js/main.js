@@ -1,7 +1,9 @@
+// captura os elementos da tela
 const modal = document.getElementById('modal-cad-aluno');
 const proximo = document.getElementById('btn-proximo');
 const enviar = document.getElementById('btn-enviar');
 const conteudoModal = document.getElementsByClassName('conteudo-modal')
+const modalLogin = document.getElementById('modal-login')
 
 //dados do form de alunos
 const nome = document.getElementById('nome')
@@ -16,6 +18,9 @@ const dados = {};
 
 function chamaModal() {
     modal.classList.toggle('esconde-modal')
+}
+function chamaModalLogin() {
+    modalLogin.classList.toggle('esconde-modal')
 }
 
 
@@ -49,4 +54,9 @@ function salvar() {
         }
         xhr.send(payload);
     }, 1000)
+}
+
+
+function telaAdmin(){
+    window.location.href = "./pages/admin.html"
 }

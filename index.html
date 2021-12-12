@@ -26,7 +26,7 @@
                 <li><a href="#">Cursos</a></li>
                 <li><a href="javascript:void(0)" onclick="chamaModal()">Inscreva-se</a></li>
                 <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="javascript:void(0)" onclick="chamaModalLogin()">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -46,8 +46,62 @@
         </div>
     </main>
 
+    <section class="marginSec">
+        <div>
+            <h1 class="lightletter">Conheça as nossas formações</h1>
+            
+            <div class="containerCourses">
+                <div class="graybox">
+                    <h2>Gestão Empresarial </h2>
+                    <br>
+                    <div class="imgformatmanagement"></div>
+                    <br>
+                    <br>
+                        <button class="buttons">+ Informações</button>
+                </div>
+                <div class="graybox">
+                    <h2>Finanças Pessoais</h2>
+                    <br>
+                    <div class="imgformatfinance"></div>
+                    <br>
+                    <br>
+                    <button class="buttons">+ Informações</button>
+                </div>
+                <div class="graybox">
+                    <h2>Empreendedorismo</h2>
+                    <div class="imgformatenterprise"></div>
+                    <br>
+                    <br>
+                        <button class="buttons">+ Informações</button>    
+                </div>
+                
+            </div>
+            
+    </section>
 
 
+    <section>
+        <div class="containerModalLogin esconde-modal" id="modal-login">
+            <div class="conteudoModalLogin">
+                <h2>Login</h2>
+                <div class="radio">
+                    <input type="radio" name="grupo" id="aluno" checked>
+                    <label for="parceiro">Aluno</label>
+                    <input type="radio" name="grupo" id="parceiro">
+                    <label for="parceiro">Parceiro</label>
+                    <input type="radio" name="grupo" id="adm">
+                    <label for="adm">Administrador</label>
+                </div>
+                <form class="form-login" action="">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" id="usuario">
+                    <label for="senha-login">Senha</label>
+                    <input type="password" name="senha-login" id="senha-login">
+                    <button type="button" class="btn2" onclick="telaAdmin()">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <section>
         <div class="container-modal esconde-modal" id="modal-cad-aluno">
@@ -79,6 +133,7 @@
             </div>
         </div>
     </section>
+
     <script src="./js/main.js"></script>
 </body>
 
